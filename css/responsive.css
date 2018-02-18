@@ -1,0 +1,35 @@
+@media only screen and (max-width:960px) {
+
+.events{
+  height: 300px;
+  width: auto;
+}
+
+.pp:first-line, .debug:first-line, .tq:first-line, .speech:first-line, .robot:first-line, .wd:first-line, .gamming:first-line, .art:first-line, .fpaint:first-line, .connection:first-line, .photography:first-line, .dubsmash:first-line{
+  font-weight: bold;
+  color: #fff;
+  font-size: 0.8em;
+}
+/* 
+.s-events{
+  background-position: bottom;
+} */
+
+}
+
+@media only screen and (max-width: 480px) {
+
+.events{
+  grid-template-columns: 50% 50%;
+  height: 300px;
+  width: auto;
+  padding: 0 3rem;
+}
+
+.pp:first-line, .debug:first-line, .tq:first-line, .speech:first-line, .robot:first-line, .wd:first-line, .gamming:first-line, .art:first-line, .fpaint:first-line, .connection:first-line, .photography:first-line, .dubsmash:first-line{
+  font-weight: bold;
+  color: #fff;
+  font-size: 0.6em;
+}
+
+}
