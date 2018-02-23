@@ -36,14 +36,27 @@
 
         <!-- navigation -->
         <nav class="nav-dum">
+          <a href="#" class="toggle-btn mhide" onclick="expandmenu()"><i class="fas fa-bars"></i></a>
+          <div class="sidemenu mhide" id="side-menu">
+            <ul>
+              <li><a href="#" id="close-btn" onclick="closemenu()"><i class="fas fa-times"></i></a></li>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="#events">Events</a></li>
+              <li><a href="#schedule">Schedule</a></li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#" class="signin-snav">Register</a></li>
+            </ul>
+          </div>
           <p class="nav-brand"></p>
-          <ul class="mainnav">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="#events">Events</a></li>
-            <li><a href="#schedule">Schedule</a></li>
-            <li><a href="#">Our Team</a></li>
-            <li><a href="#" class="signin-nav">Register</a></li>
-          </ul>
+          <div class="mainnav">
+            <ul class="main-nav">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="#events">Events</a></li>
+              <li><a href="#schedule">Schedule</a></li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#" class="signin-nav">Register</a></li>
+            </ul>
+          </div>
         </nav>
         <!-- navigation ends -->
 
@@ -57,13 +70,17 @@
     </header>
     <!-- header ends -->
 
+    <!-- intro -->
     <main>
       <section class="s-intro">
         <div class="intro intro-cont sa-fade-frmbtm">
           <img src="./assets/img/tekzion.png" alt="Tekzion">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quis voluptas, aperiam asperiores ex, vitae sed consequuntur quia eos iure est modi temporibus cumque, ab optio nemo dicta molestiae voluptatem eveniet doloribus officiis cum enim deleniti commodi non. Recusandae, labore nam error? Dolor facere, mollitia eligendi, error maxime et cumque! Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>
+            We the students of computer science and IT department Alpha Pondicherry welcome you to our national level symposium. Here we will be having both technical and non-technical events so this is not just for computer science students, everyone departments from any colleges can participate. The entry fee will be 100rs, food will be provided for free and you can participate in any events with no extra fee.
+          </p>
         </div>
       </section>
+
       <!-- technical events -->
       <section class="s-events s-technical parallax-window" id="events" data-parallax="scroll" data-image-src="./assets/img/technical.jpg">
         <div class="technical">
@@ -85,7 +102,6 @@
           </div>
         </div>
       </section>
-      <!-- technical events ends -->
 
       <!-- non technical events -->
       <section class="s-events s-ntechnical parallax-window" data-parallax="scroll" data-image-src="./assets/img/ntechnical.jpg">
@@ -109,6 +125,8 @@
           </div>
         </div>
       </section>
+
+      <!-- Schedule -->
       <section class="s-schedule" id="schedule">
         <h3>Schedule</h3>
         <div class="schedule">
@@ -165,13 +183,13 @@
             Alpha College of Engineering and technology <br>
             Bahour to Kannikoil main road <br>
             Puducherry
+            Date: 17.3.18
           </p>
         </div>
-        <div class="location sa-fade-frmbtm">
+        <!-- <div class="location sa-fade-frmbtm">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7811.009753725997!2d79.76446302208383!3d11.79987106867151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a549f363d892bd1%3A0x8590d692e3c08b67!2sPondicherry+Alpha+College+Of+Engineering+And+Technology!5e0!3m2!1sen!2sin!4v1518552795499" width="1200" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-        </div>
+        </div> -->
       </section>
-      <!-- non technical ends -->
     </main>
 
     <footer>
@@ -196,7 +214,7 @@
 
   <!-- jquery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="js/local-animation.js"></script>
+  <script src="js/master.js"></script>
   <script src="js/parallax.min.js"></script>
 
   <script>

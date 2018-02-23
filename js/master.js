@@ -1,5 +1,6 @@
 $(window).scroll(function(){
   fixednav();
+  // menuhide();
   // parallax();
 })
 
@@ -13,6 +14,12 @@ function fixednav(){
       $('.banner').removeClass('fixed-banner');
     }
 }
+
+// function menuhide(){
+//   $('.toggle-btn').click(function(){
+//     $('.sidemenu').addClass('mhide');
+//   });
+// }
 
 // function parallax(){
 //   var wScroll = $(this).scrollTop();
@@ -59,3 +66,11 @@ $(document).ready(function(){
     } // End if
   });
 });
+
+function expandmenu(){
+  document.getElementById('side-menu').style.width = '250px';
+}
+
+function closemenu(){
+  document.getElementById('side-menu').style.width = '0';
+}
