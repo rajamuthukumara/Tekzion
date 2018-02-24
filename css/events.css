@@ -1,0 +1,228 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  /* font-family: 'Segoe UI', sans-serif; */
+  font-family: 'Source Code Pro', monospace;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+  background: #000;
+  overflow-x: hidden;
+}
+
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/*-------------------------------- begining header -----------------------------*/
+
+.mainhead{
+  height: 20vh;
+  display: flex;
+  color: #fff;
+}
+
+.container{
+  max-width: 1900px;
+  padding: 0 1rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+.container-fluid{
+  text-align: center;
+  margin: 0 auto;
+}
+
+.fullscreen-video-wrap{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.fullscreen-video-wrap video{
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.vid-overlay1{
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  /* background: #225470; */
+  background: rgba(0, 0, 0,0.85);
+  z-index: 1;
+}
+
+.mainhead-content{
+  z-index: 2;
+  width: 100%;
+  height: 100vh;
+
+    /* font-family: 'Roboto Mono', monospace; */
+}
+
+/*------------------------- navigation------------------------------------------ */
+
+.mainhead-content .mainnav a{
+  transition: all 0.7s;
+}
+
+.mainhead-content a:hover{
+  color: rgb(255, 0, 73);
+  text-shadow: 2px 3px 18px #fff;
+}
+
+.mainhead-content .mainnav ul{
+  list-style: none;
+  margin: 0;
+  padding: 9px 0px;
+  float: right;
+}
+
+.mainhead-content .mainnav ul li{
+  display: inline;
+  top: 5px;
+  right: 5px;
+  padding-left: 1rem;
+}
+
+.mainnav .signin-nav{
+  color: rgb(255, 0, 73);
+  padding-right: 10px;
+}
+
+.mainnav .signin-nav:hover{
+  color: #fff;
+  text-shadow: 3px 5px 18px rgb(255, 0, 73);
+}
+
+.fixed-nav{
+  position: fixed;
+  width: 100vw;
+  /* max-width: 1900px; */
+  padding: 0 20px;
+  background-color: rgba(0, 0, 0,0.85);
+}
+
+.fixed-nav .main-nav{
+  padding: 9px 5px;
+}
+
+.fixed-nav .toggle-btn{
+  padding: 10px 5px 5px 10px;
+}
+
+.toggle-btn{
+  float: left;
+  font-size: 150%;
+  padding-left: 30px;
+}
+
+.mhide{
+  display: none;
+}
+
+.sidemenu{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  opacity: 0.8;
+  overflow-x: hidden;
+  padding-top: 40px;
+  transition: 0.5s;
+}
+
+.sidemenu ul{
+  list-style: none;
+  float: left;
+  text-align: center;
+}
+
+.sidemenu a{
+  padding: 10px 10px 10px 30px;
+  font-size: 22px;
+  display: block;
+  transition: 0.3s;
+}
+
+#close-btn{
+  position: absolute;
+  top: 0;
+  right: 22px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* ---------------------------banner--------------------------- */
+
+.banner{
+  /* background-color: green; */
+  width: 100%;
+  display: inline-block;
+  /* padding: 5em 0; */
+  margin: 0 auto;
+}
+
+.fixed-banner{
+  padding-top: 50px;
+}
+
+.tekzion{
+  width: 10%;
+  opacity: 0.75;
+}
+
+/*--------------------------------- footer----------------------------------------- */
+
+footer{
+  font-family: 'Orbitron', sans-serif;
+  background: #000;
+  overflow: hidden;
+}
+
+.contact-grid{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  line-height: 0.4;
+}
+
+.contact{
+  margin: 0 auto 0 100px;
+}
+
+footer h5{
+  font-size: 200%;
+  margin: 2rem 0 1.5rem 0;
+}
+
+.follow{
+  margin: 0 100px 0 auto;
+}
+
+.socialnet,.socialnet li{
+  list-style: none;
+  display: inline;
+  padding-right: 20px;
+}
+
+.copyright{
+  margin: auto 0 5px 0;
+}

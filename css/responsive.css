@@ -91,6 +91,11 @@ body{
   font-size: 0.6em;
 }
 
+.s-location{
+  grid-template-columns: 100%;
+  grid-template-rows: 40% 60%;
+}
+
 .contact{
   margin: 0;
 }

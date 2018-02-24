@@ -1,5 +1,6 @@
 $(window).scroll(function(){
   fixednav();
+  updateTimer();
   // menuhide();
   // parallax();
 })
@@ -67,6 +68,38 @@ $(document).ready(function(){
   });
 });
 
+// $(document).ready(function(){
+//   // var date = new Date();
+//   var today = new Date();
+//   var symp = new Date();
+//   today.setDate('2018','24','02');
+//   symp.setDate('2018','17','03');
+//   var ans = new Date();
+//   ans = today - symp;
+//   $("#daystogo").html(ans+" days to go");
+// });
+
+function updateTimer(){
+   // Get the element to append to
+   var counter = document.getElementById("daystogo");
+   // Set the targetDate
+   var targetDate = new Date("march 17, 2018 08:30:00");
+
+   var remainingSeconds = ~ ~((targetDate - new Date()) / 1000);
+   var remainingTime = {
+       "days": remainingSeconds / (60 * 60 * 24)
+   };
+
+   var str = " ";
+   for (var i in remainingTime) {
+       str += ~ ~remainingTime[i] + " " + i + " ";
+   }
+
+   str = str+" to go";
+   // Store the result in the element
+   counter.innerHTML = str;
+}
+
 function expandmenu(){
   document.getElementById('side-menu').style.width = '250px';
 }
@@ -75,6 +108,10 @@ function closemenu(){
   document.getElementById('side-menu').style.width = '0';
 }
 
-$(document).ready(function(){
+function pp(){
+  window.open("pp.html");
+}
 
-})
+function fpaint(){
+  window.open("facepaint.html");
+}

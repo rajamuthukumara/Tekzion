@@ -1,0 +1,30 @@
+/* ---------------------------main---------------------------------- */
+
+main{
+  /* background-image: url("../assets/img/fpaint.jpg"); */
+  background-color: linear-gradient(black,gray);
+}
+
+.description, .topic, .rules{
+  text-align: left;
+  padding: 15px 30px;
+}
+
+.description h1, .topic h1, .rules h1{
+  color: rgb(255, 0, 73);
+}
+
+.topics-grid{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.sdet{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.sdet span{
+  font-weight: bold;
+  color: rgb(255, 0, 73);
+}
