@@ -74,3 +74,7 @@ function expandmenu(){
 function closemenu(){
   document.getElementById('side-menu').style.width = '0';
 }
+
+$(document).ready(function(){
+
+})

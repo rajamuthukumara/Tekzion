@@ -112,8 +112,8 @@ a{
 .fixed-nav{
   position: fixed;
   width: 100vw;
-  max-width: 1900px;
-  padding: 0 15px;
+  /* max-width: 1900px; */
+  padding: 0 20px;
   background-color: rgba(0, 0, 0,0.85);
 }
 
@@ -122,7 +122,7 @@ a{
 }
 
 .fixed-nav .toggle-btn{
-  padding: 10px 5px 5px 15px;
+  padding: 10px 5px 5px 10px;
 }
 
 .toggle-btn{
@@ -211,27 +211,34 @@ a{
 
 /* -------------------------------------Intro-------------------------------------- */
 
-/* .s-intro{
+.s-intro{
   display: grid;
   grid-template-columns: 70% 30%;
   color: #bbb;
-} */
+}
 
-.intro-cont img{
+/* .intro-cont img{
   height: 60px;
   width: auto;
   margin: 0 auto;
-}
+} */
 
 .intro-cont{
   padding: 30px;
 }
 
-.intro-img{
-  margin: auto 0;
+.intro-cont h1{
+  margin: 0;
+  padding-bottom: 10px;
+  line-height: 0;
 }
 
-h4{
+.intro-img img{
+  height: 150px;
+  width: auto;
+}
+
+.s-events h4{
   font-size: 250%;
   line-height: 0;
   text-align: left;
@@ -240,7 +247,7 @@ h4{
   font-family: 'Orbitron', sans-serif;
 }
 
-h4+p{
+.s-events h4+p{
   color: #7a8ec3;
   font-size: 120%;
   font-weight: 10;
@@ -426,7 +433,7 @@ footer{
   margin: 0 auto 0 100px;
 }
 
-h5{
+footer h5{
   font-size: 200%;
   margin: 2rem 0 1.5rem 0;
 }

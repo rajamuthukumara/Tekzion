@@ -15,8 +15,6 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
   <link href="https://fonts.googleapis.com/css?family=Orbitron|Source+Code+Pro" rel="stylesheet">
 
-  <!-- scroll reveal -->
-  <script src="js/scrollreveal.min.js"></script>
 </head>
 
 <body>
@@ -26,7 +24,7 @@
     <!-- header -->
     <header class="mainhead">
       <div class="fullscreen-video-wrap">
-        <video autoplay loop poster="posterimage.jpg">
+        <video autoplay loop poster="assets/img/posterimage.png">
           <source src="assets/vid/bg.webm" type="video/webm">
           <source src="assets/vid/bg.mp4" type="video/mp4">
         </video>
@@ -74,10 +72,18 @@
     <main>
       <section class="s-intro">
         <div class="intro intro-cont sa-fade-frmbtm">
-          <img src="./assets/img/tekzion.png" alt="Tekzion">
+          <h1>Tekzion</h3>
           <p>
-            We the students of computer science and IT department Alpha Pondicherry welcome you to our national level symposium. Here we will be having both technical and non-technical events so this is not just for computer science students, everyone departments from any colleges can participate. The entry fee will be 100rs, food will be provided for free and you can participate in any events with no extra fee.
+            We the students of computer science and IT department Alpha Pondicherry welcome you to our national level symposium. Here we will be having both technical and non-technical events so this is not just for computer science students, everyone departments from any colleges can participate. The entry fee will be 100rs, food will be provided for free. With entry fee, you can attend one non-technical and one technical
           </p>
+        </div>
+        <div class="intro-ext sa-fade-frmright">
+          <div class="intro intro-img">
+            <img src="assets/img/tekzion-logo.png" alt="Tekzion">
+          </div>
+          <div class="counter sa-fade-frmbtm">
+            <p id="daystogo">days to go</p>
+          </div>
         </div>
       </section>
 
@@ -127,7 +133,7 @@
       </section>
 
       <!-- Schedule -->
-      <section class="s-schedule" id="schedule">
+      <!-- <section class="s-schedule" id="schedule">
         <h3>Schedule</h3>
         <div class="schedule">
           <div class="tech-schedule">
@@ -175,7 +181,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
       <section class="s-location">
         <div class="location-info">
           <h3>Vennue Location</h3>
@@ -212,35 +218,13 @@
     </footer>
   </div>
 
-  <!-- jquery -->
+  <!-- scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/scrollreveal.min.js"></script>
   <script src="js/master.js"></script>
   <script src="js/parallax.min.js"></script>
+  <script src="js/animation.js"></script>
 
-  <script>
-    window.sr = ScrollReveal();
-    sr.reveal('.sa-fade-frmbtm',{
-      duration: 2000,
-      origin: 'bottom'
-    });
-
-    sr.reveal('.sa-fade-frmright',{
-      duration: 2000,
-      origin: 'right'
-    });
-
-    sr.reveal('.sa-fade-frmright2',{
-      duration: 2000,
-      delay: 150,
-      origin: 'right'
-    });
-
-    sr.reveal('.sa-fade-frmright3',{
-      duration: 2000,
-      delay: 300,
-      origin: 'right'
-    });
-  </script>
 </body>
 
 </html>

@@ -1,4 +1,26 @@
 @media only screen and (max-width:960px) {
+
+body{
+  line-height: 1.2;
+}
+
+.intro-cont{
+  padding: 20px;
+}
+
+.intro-cont h1{
+  display: none;
+}
+
+.intro-img{
+  padding-top: 20px;
+}
+
+.intro-img img{
+  height: 140px;
+  width: auto;
+}
+
 .events{
   height: 300px;
   width: auto;
@@ -16,7 +38,11 @@
 
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 500px) {
+
+body{
+  line-height: 1;
+}
 
 .mhide{
   display: block;
@@ -24,6 +50,32 @@
 
 .mainnav{
   display: none;
+}
+
+.s-intro{
+  display: block;
+}
+
+.intro-cont{
+  padding-bottom: 2px;
+}
+
+.intro-ext{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.intro-img{
+  padding-top: 0px;
+  padding-bottom: 20px;
+}
+
+.intro-img img{
+  float: right;
+}
+
+.counter{
+  padding-top: 30px;
 }
 
 .events{
@@ -37,6 +89,44 @@
   font-weight: bold;
   color: #fff;
   font-size: 0.6em;
+}
+
+.contact{
+  margin: 0;
+}
+
+.location-info h3{
+  padding-top: 10px;
+  line-height: 0;
+}
+
+.location-info p{
+  font-size: 70%;
+}
+
+footer h5{
+  font-size: 100%;
+  line-height: 0;
+  margin: 1.5rem 0 1rem 0;
+}
+
+.contact p{
+  font-size: 70%;
+}
+
+.follow{
+  margin: 0 0 0 auto;
+}
+
+.socialnet,.socialnet li{
+  list-style: none;
+  display: inline;
+  /* padding-right: 20px; */
+}
+
+.copyright{
+  font-size: 60%;
+  margin: auto 0 5px 0;
 }
 
 }
