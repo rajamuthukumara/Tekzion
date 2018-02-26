@@ -20,3 +20,23 @@ sr.reveal('.sa-fade-frmright3',{
   delay: 300,
   origin: 'right'
 });
+
+sr.reveal('.evt-left',{
+  duration: 1000,
+  origin: 'left'
+});
+
+sr.reveal('.evt-right',{
+  duration: 1000,
+  origin: 'right'
+});
+
+sr.reveal('.evt-bottom',{
+  duration: 1000,
+  origin: 'bottom'
+});
+
+sr.reveal('.evt-top',{
+  duration: 1000,
+  origin: 'top'
+});

@@ -115,3 +115,7 @@ function pp(){
 function fpaint(){
   window.open("facepaint.html");
 }
+
+function techspeech(){
+  window.open("techspeech.html");
+}

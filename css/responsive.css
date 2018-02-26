@@ -24,12 +24,13 @@ body{
 .events{
   height: 300px;
   width: auto;
+  font-size: 70%;
 }
 
 .pp:first-line, .debug:first-line, .tq:first-line, .speech:first-line, .robot:first-line, .wd:first-line, .gamming:first-line, .art:first-line, .fpaint:first-line, .connection:first-line, .photography:first-line, .dubsmash:first-line{
   font-weight: bold;
   color: #fff;
-  font-size: 0.8em;
+  font-size: 1.5em;
 }
 /*
 .s-events{

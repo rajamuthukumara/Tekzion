@@ -100,8 +100,8 @@ Innovations is the route map for inventions and inventions are the key to the be
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, porro. Ipsum dolorem illum consequuntur, laudantium animi atque laborum earum repellendus, fugit, dignissimos necessitatibus facilis tempore adipisci? Fuga atque magnam autem."></div>
             <div class="tq sa-fade-frmright3" data-text="Technical Quiz
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis deserunt magni, enim modi nam molestiae sunt tempore odit, quidem, aliquam, ullam laboriosam. Repellat cum architecto natus iusto id dolor ullam."></div>
-            <div class="speech sa-fade-frmright" data-text="On Spot Tech Speech
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis deserunt magni, enim modi nam molestiae sunt tempore odit, quidem, aliquam, ullam laboriosam. Repellat cum architecto natus iusto id dolor ullam."></div>
+            <div class="speech sa-fade-frmright" data-text="Tech Speech
+The  participants  will  be  given a spot technical topic to speak. The topic will be a prevenient one. The speech should not be less than stipulated time given. If the participant took a long respite or if the speech was out of range, the participant will be rejected. One who was selected will be qualified to attend further round." onclick="techspeech()"></div>
             <div class="wd sa-fade-frmright2" data-text="Web Development
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis deserunt magni, enim modi nam molestiae sunt tempore odit, quidem, aliquam, ullam laboriosam. Repellat cum architecto natus iusto id dolor ullam."></div>
             <div class="robot sa-fade-frmright3" data-text="Line Follower Robot
@@ -205,15 +205,16 @@ Face painting options range from cheek art,partial face or full face! we don't l
       <div class="contact-grid">
         <div class="contact">
             <h5>Contact</h5>
-            <p>+91 123 456 7890</p>
-            <p>+91 098 765 4321</p>
+            <p><span>Balaji.T: </span>959 779 0175</p>
+            <p><span>Karthick.S: </span>805 652 9553</p>
+            <p><span>Kishore.M: </span>852 662 2084</p>
         </div>
         <div class="follow">
           <h5>Follow us</h5>
           <ul class="socialnet">
-            <li><a href="https://www.facebook.com/tekzion/?ref=page_internal" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+            <li><a href="https://www.facebook.com/tekzion" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UCr0PjqqCEwX_iHRoXNjw_WQ" target="_blank"><i class="fab fa-youtube"></i></a></li>
+            <li><a href="mailto:tekzion2k18@aceatech.com"><i class="far fa-envelope"></i></a></li>
           </ul>
         </div>
       </div>

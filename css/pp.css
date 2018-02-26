@@ -12,6 +12,15 @@ main{
 
 .description h1, .topic h1, .rules h1{
   color: rgb(255, 0, 73);
+  line-height: 1;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 200%;
+}
+
+.rules h2{
+  line-height: 1;
+  margin-bottom: 0;
 }
 
 .topics-grid{
@@ -27,4 +36,17 @@ main{
 .sdet span{
   font-weight: bold;
   color: rgb(255, 0, 73);
+}
+
+.round1{
+  padding-bottom: 20px;
+}
+
+@media only screen and (max-width:600px) {
+
+main li{
+  /* line-height: 1.5; */
+  margin-bottom: 20px;
+}
+
 }
