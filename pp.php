@@ -1,12 +1,21 @@
-<?php include('includes/header.php'); ?>
+<?php
+$lstyle = "css/pp.css";
+include('includes/header.php');
+?>
     <!-- main -->
 
     <main>
-      <?php include('includes/desc.php'); ?>
+      <?php
+      $head = "Paper Presentation";
+      $duration = "10 mins";
+      $participant = "3";
+      $desc = "Innovations is the route map for inventions and inventions are the key to the better world. Do you have those unique key of ideas? We are here to hear your ideas in the form of Paper Presentation.";
+      include('includes/desc.php');
+      ?>
       <section class="topic evt-bottom">
         <h1>Topics:</h1>
         <div class="topics-grid">
-          <div class="one">
+          <div class="one evt-left">
             <ul>
               <li>Cloud computing</li>
               <li>Big data</li>
@@ -18,7 +27,7 @@
               <li>Sixth sense technology</li>
             </ul>
           </div>
-          <div class="two">
+          <div class="two evt-right">
             <ul>
               <li>5G wireless technology</li>
               <li>Blue brain technology</li>
@@ -33,7 +42,7 @@
         </div>
       </section>
 
-      <section class="rules">
+      <section class="rules evt-bottom">
         <h1>Rules</h1>
         <div class="round1 evt-bottom">
           <h2>Round one: Online Submission</h2>

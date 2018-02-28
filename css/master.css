@@ -118,6 +118,7 @@ a{
   /* max-width: 1900px; */
   padding: 0 20px;
   background-color: rgba(0, 0, 0,0.85);
+  z-index: 10;
 }
 
 .fixed-nav .main-nav{
@@ -338,8 +339,8 @@ padding-bottom: 30px;
   background-image: url("../assets/img/robot.jpg");
 }
 
-.connection{
-  background-image: url("../assets/img/connection.jpg");
+.film{
+  background-image: url("../assets/img/film.jpg");
 }
 
 .gamming{
@@ -350,19 +351,19 @@ padding-bottom: 30px;
   background-image: url("../assets/img/fpaint.jpg");
 }
 
-.photography{
-  background-image: url("../assets/img/photography.jpg");
+.food{
+  background-image: url("../assets/img/food.jpg");
 }
 
 .art{
   background-image: url("../assets/img/art.jpg");
 }
 
-.dubsmash{
-  background-image: url("../assets/img/dubsmash.png");
+.cym{
+  background-image: url("../assets/img/cym.jpg");
 }
 
-.pp, .debug, .tq, .speech, .robot, .wd, .gamming, .art, .fpaint, .connection, .photography, .dubsmash{
+.pp, .debug, .tq, .speech, .robot, .wd, .gamming, .art, .fpaint, .film, .food, .cym{
   position: relative;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -372,12 +373,12 @@ padding-bottom: 30px;
   -moz-transition: 0.7s;
 }
 
-.pp:hover, .debug:hover, .tq:hover, .speech:hover, .robot:hover, .wd:hover, .gamming:hover, .art:hover, .fpaint:hover, .connection:hover, .photography:hover, .dubsmash:hover{
+.pp:hover, .debug:hover, .tq:hover, .speech:hover, .robot:hover, .wd:hover, .gamming:hover, .art:hover, .fpaint:hover, .film:hover, .food:hover, .cym:hover{
   background-repeat: no-repeat;
   background-size: 120%;
 }
 
-.pp:after, .debug:after, .tq:after, .speech:after, .robot:after, .wd:after, .gamming:after, .art:after, .fpaint:after, .connection:after, .photography:after, .dubsmash:after{
+.pp:after, .debug:after, .tq:after, .speech:after, .robot:after, .wd:after, .gamming:after, .art:after, .fpaint:after, .film:after, .food:after, .cym:after{
   position: absolute;
   top: 85%;
   bottom: 0;
@@ -395,13 +396,13 @@ padding-bottom: 30px;
   -moz-transition: 0.9s;
 }
 
-.pp:first-line, .debug:first-line, .tq:first-line, .speech:first-line, .robot:first-line, .wd:first-line, .gamming:first-line, .art:first-line, .fpaint:first-line, .connection:first-line, .photography:first-line, .dubsmash:first-line{
+.pp:first-line, .debug:first-line, .tq:first-line, .speech:first-line, .robot:first-line, .wd:first-line, .gamming:first-line, .art:first-line, .fpaint:first-line, .film:first-line, .food:first-line, .cym:first-line{
   font-weight: bold;
   color: #fff;
   font-size: 1.5em;
 }
 
-.pp:hover:after, .debug:hover:after, .tq:hover:after, .speech:hover:after, .robot:hover:after, .wd:hover:after, .gamming:hover:after, .art:hover:after, .fpaint:hover:after, .connection:hover:after, .photography:hover:after, .dubsmash:hover:after{
+.pp:hover:after, .debug:hover:after, .tq:hover:after, .speech:hover:after, .robot:hover:after, .wd:hover:after, .gamming:hover:after, .art:hover:after, .fpaint:hover:after, .film:hover:after, .food:hover:after, .cym:hover:after{
   top:0;
   padding: 8px;
   background-color: rgba(0,0,0,0.7);

@@ -1,9 +1,9 @@
 $(window).scroll(function(){
   fixednav();
   updateTimer();
-  // menuhide();
-  // parallax();
 })
+
+// ------------------------------fixed nav------------------------------------
 
 function fixednav(){
     if($(document).scrollTop() > 50){
@@ -43,28 +43,19 @@ function fixednav(){
 //   })
 // }
 
+// ------------------------------------smooth scroll---------------------------------
+
 $(document).ready(function(){
-  // Add smooth scrolling to all links
   $("a").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
-      // Prevent default anchor click behavior
       event.preventDefault();
-
-      // Store hash
       var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
         scrollTop: ($(hash).offset().top)
       }, 800, function(){
-
-        // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
-    } // End if
+    }
   });
 });
 
@@ -79,10 +70,10 @@ $(document).ready(function(){
 //   $("#daystogo").html(ans+" days to go");
 // });
 
+// -------------------------------------timer---------------------------------------
+
 function updateTimer(){
-   // Get the element to append to
    var counter = document.getElementById("daystogo");
-   // Set the targetDate
    var targetDate = new Date("march 17, 2018 08:30:00");
 
    var remainingSeconds = ~ ~((targetDate - new Date()) / 1000);
@@ -96,9 +87,10 @@ function updateTimer(){
    }
 
    str = str+" to go";
-   // Store the result in the element
    counter.innerHTML = str;
 }
+
+// ------------------------------navbar------------------------------------------------
 
 function expandmenu(){
   document.getElementById('side-menu').style.width = '250px';
@@ -108,14 +100,61 @@ function closemenu(){
   document.getElementById('side-menu').style.width = '0';
 }
 
-function pp(){
-  window.open("pp.html");
-}
+// --------------------------------events-----------------------------------------------
 
-function fpaint(){
-  window.open("facepaint.html");
+function pp(){
+  window.location = "pp.php";
 }
 
 function techspeech(){
-  window.open("techspeech.html");
+  window.location = "techspeech.php";
 }
+
+function quiz(){
+  window.location = "quiz.php";
+}
+
+function debug(){
+  window.location = "debug.php";
+}
+
+function wd(){
+  window.location = "wd.php";
+}
+
+function robot(){
+  window.location = "robot.php";
+}
+
+// --------------------------------non technical---------------------------------
+
+function fpaint(){
+  window.location = "facepaint.php";
+}
+
+function film(){
+  window.location = "film.php";
+}
+
+function game(){
+  window.location = "game.php";
+}
+
+function art(){
+  window.location = "art.php";
+}
+
+function eat(){
+  window.location = "eatathon.php";
+}
+
+function cym(){
+  window.location = "cym.php";
+}
+
+// ---------------------------------loader---------------------------------------
+$(window).on('load', function() {
+  $('#spinner').fadeOut();
+  $('#overlay').delay(350).fadeOut('slow');
+  // $('body').delay(350).css({'overflow':'visible'});
+})

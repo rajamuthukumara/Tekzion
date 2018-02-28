@@ -1,0 +1,219 @@
+@media only screen and (max-width:960px) {
+
+body{
+  line-height: 1.2;
+}
+
+.intro-cont{
+  padding: 20px;
+}
+
+.intro-cont h1{
+  display: none;
+}
+
+.intro-img{
+  padding-top: 20px;
+}
+
+.intro-img img{
+  height: 140px;
+  width: auto;
+}
+
+.events{
+  height: 300px;
+  width: auto;
+  font-size: 70%;
+}
+
+.pp:first-line, .debug:first-line, .tq:first-line, .speech:first-line, .robot:first-line, .wd:first-line, .gamming:first-line, .art:first-line, .fpaint:first-line, .film:first-line, .food:first-line, .cym:first-line{
+  font-weight: bold;
+  color: #fff;
+  font-size: 1.5em;
+}
+
+}
+
+@media only screen and (max-width: 685px) {
+
+body{
+  line-height: 1;
+}
+
+.mhide{
+  display: block;
+}
+
+.mainnav{
+  display: none;
+}
+
+.fixed-banner{
+  padding-top: 8rem;
+}
+
+.s-intro{
+  display: block;
+}
+
+.intro-cont{
+  padding-bottom: 2px;
+}
+
+.intro-ext{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.intro-img{
+  padding-top: 0px;
+  padding-bottom: 20px;
+}
+
+.intro-img img{
+  float: right;
+}
+
+.counter{
+  padding-top: 30px;
+}
+
+.s-events h4{
+  font-size: 200%;
+}
+
+.s-events h4+p{
+  display: none;
+}
+
+.events{
+  grid-template-columns: 50% 50%;
+  height: 300px;
+  width: auto;
+  padding: 0 3rem;
+}
+
+.pp:after{
+  content: "Paper Presentation";
+  margin: auto 0;
+}
+
+.debug:after{
+  content: "Code Debug";
+  margin: auto 0;
+  padding-top: 8px;
+}
+
+.tq:after{
+  content: "Tech Quiz";
+  padding-top: 8px;
+}
+
+.speech:after{
+  content: "Tech Speech";
+  padding-top: 8px;
+}
+
+.wd:after{
+  content: "Web Development";
+  padding-top: 8px;
+}
+
+.robot:after{
+  content: "Line Follower";
+  padding-top: 8px;
+}
+
+.film:after{
+  content: "Short Film";
+  padding-top: 8px;
+}
+
+.gamming:after{
+  content: "Gamming";
+  padding-top: 8px;
+}
+
+.food:after{
+  content: "Eat-a-Thon";
+  padding-top: 8px;
+}
+
+.fpaint:after{
+  content: "Face Paint";
+  padding-top: 8px;
+}
+
+.art:after{
+  content: "Fine arts";
+  padding-top: 8px;
+}
+
+.cym:after{
+  /* font-size: 0.5em; */
+  content: "Crypt Your Mind";
+}
+
+
+/* .pp:first-line, .debug:first-line, .tq:first-line, .speech:first-line, .robot:first-line, .wd:first-line, .gamming:first-line, .art:first-line, .fpaint:first-line, .film:first-line, .food:first-line, .cym:first-line{
+  font-weight: bolder;
+  color: #fff;
+  font-size: 0.7162rem;
+} */
+/*
+div:not(.pp:first-line, .debug:first-line, .tq:first-line, .speech:first-line, .robot:first-line, .wd:first-line, .gamming:first-line, .art:first-line, .fpaint:first-line, .film:first-line, .food:first-line, .cym:first-line){
+  display: none;
+} */
+
+.pp:after, .debug:after, .tq:after, .speech:after, .robot:after, .wd:after, .gamming:after, .art:after, .fpaint:after, .film:after, .food:after, .cym:after{
+  top: 60%;
+}
+
+.pp:hover:after, .debug:hover:after, .tq:hover:after, .speech:hover:after, .robot:hover:after, .wd:hover:after, .gamming:hover:after, .art:hover:after, .fpaint:hover:after, .film:hover:after, .food:hover:after, .cym:hover:after{
+  top: 60%;
+}
+
+.s-location{
+  grid-template-columns: 100%;
+  grid-template-rows: 40% 60%;
+}
+
+.contact{
+  margin: 0;
+}
+
+.location-info h3{
+  padding-top: 10px;
+  line-height: 0;
+}
+
+.location-info p{
+  font-size: 70%;
+}
+
+footer h5{
+  font-size: 100%;
+  line-height: 0;
+  margin: 1.5rem 0 1rem 0;
+}
+
+.contact p{
+  font-size: 70%;
+}
+
+.follow{
+  margin: 0 0 0 auto;
+}
+
+.socialnet,.socialnet li{
+  list-style: none;
+  display: inline;
+}
+
+.copyright{
+  font-size: 60%;
+  margin: auto 0 5px 0;
+}
+
+}

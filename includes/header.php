@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Paper Presentation</title>
+  <title>Events</title>
 
   <!-- stylesheets -->
-  <link rel="stylesheet" href="css/pp.css">
-  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href=" <?php echo $lstyle?> ">
+  <!-- <link rel="stylesheet" href="css/responsive.css"> -->
   <link rel="stylesheet" href="css/events.css">
 
   <!-- cdns -->
@@ -33,24 +33,24 @@
 
         <!-- navigation -->
         <nav class="nav-dum">
-          <a href="#" class="toggle-btn mhide" onclick="expandmenu()"><i class="fas fa-bars"></i></a>
+          <a class="toggle-btn mhide" onclick="expandmenu()"><i class="fas fa-bars"></i></a>
           <div class="sidemenu mhide" id="side-menu">
             <ul>
-              <li><a href="#" id="close-btn" onclick="closemenu()"><i class="fas fa-times"></i></a></li>
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="#events">Events</a></li>
+              <li><a id="close-btn" onclick="closemenu()"><i class="fas fa-times"></i></a></li>
+              <li><a href="<?php echo 'index.php'; ?>">Home</a></li>
+              <li><a href="<?php echo 'index.php/#events';?>">Events</a></li>
               <li><a href="#schedule">Schedule</a></li>
-              <li><a href="#">Our Team</a></li>
+              <li><a href="http://www.aceatech.com/" target="_blank">Our College</a></li>
               <li><a href="#" class="signin-snav">Register</a></li>
             </ul>
           </div>
           <p class="nav-brand"></p>
           <div class="mainnav">
             <ul class="main-nav">
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="#events">Events</a></li>
+              <li><a href="<?php echo 'index.php'; ?>">Home</a></li>
+              <li><a href="<?php echo 'index.php/#events';?>">Events</a></li>
               <li><a href="#schedule">Schedule</a></li>
-              <li><a href="#">Our Team</a></li>
+              <li><a href="http://www.aceatech.com/" target="_blank">Our College</a></li>
               <li><a href="#" class="signin-nav">Register</a></li>
             </ul>
           </div>

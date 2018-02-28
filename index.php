@@ -9,7 +9,8 @@
 
   <!-- stylesheets -->
   <link rel="stylesheet" href="css/master.css">
-  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/master.responsive.css">
+  <link rel="stylesheet" href="css/loader.css">
 
   <!-- cdns -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
@@ -18,40 +19,45 @@
 </head>
 
 <body>
+
+  <div class="loading" id="overlay">
+    <div class="spinner spinner2"></div>
+  </div>
+
   <div class="container-fluid">
-    <div class="vid-overlay1"></div>
 
     <!-- header -->
     <header class="mainhead">
+      <div class="vid-overlay1"></div>
       <div class="fullscreen-video-wrap">
         <video autoplay loop poster="assets/img/posterimage.png">
           <source src="assets/vid/bg.webm" type="video/webm">
           <source src="assets/vid/bg.mp4" type="video/mp4">
         </video>
       </div>
-      <!-- <div class="vid-overlay1"></div> -->
+      <!-- <div class="overlay"></div> -->
       <div class="mainhead-content">
 
         <!-- navigation -->
         <nav class="nav-dum">
-          <a href="#" class="toggle-btn mhide" onclick="expandmenu()"><i class="fas fa-bars"></i></a>
+          <a class="toggle-btn mhide" onclick="expandmenu()"><i class="fas fa-bars"></i></a>
           <div class="sidemenu mhide" id="side-menu">
             <ul>
-              <li><a href="#" id="close-btn" onclick="closemenu()"><i class="fas fa-times"></i></a></li>
-              <li><a href="../index.html">Home</a></li>
+              <li><a id="close-btn" onclick="closemenu()"><i class="fas fa-times"></i></a></li>
+              <li><a href="<?php echo 'index.php'; ?>">Home</a></li>
               <li><a href="#events">Events</a></li>
               <li><a href="#schedule">Schedule</a></li>
-              <li><a href="#">Our Team</a></li>
+              <li><a href="http://www.aceatech.com/" target="_blank">Our College</a></li>
               <li><a href="#" class="signin-snav">Register</a></li>
             </ul>
           </div>
           <p class="nav-brand"></p>
           <div class="mainnav">
             <ul class="main-nav">
-              <li><a href="../index.html">Home</a></li>
+              <li><a href="<?php echo 'index.php'; ?>">Home</a></li>
               <li><a href="#events">Events</a></li>
               <li><a href="#schedule">Schedule</a></li>
-              <li><a href="#">Our Team</a></li>
+              <li><a href="http://www.aceatech.com/" target="_blank">Our College</a></li>
               <li><a href="#" class="signin-nav">Register</a></li>
             </ul>
           </div>
@@ -95,17 +101,17 @@
           <p>Unleash the tech skill inside you</p>
           <div class="events container">
             <div class="pp sa-fade-frmright" data-text="Paper Presentation
-Innovations is the route map for inventions and inventions are the key to the better world. Do you have those unique key of ideas? We are here to hear your ideas in the form of Paper Presentation." onclick="pp()"></div>
-            <div class="debug sa-fade-frmright2" data-text="Debug
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, porro. Ipsum dolorem illum consequuntur, laudantium animi atque laborum earum repellendus, fugit, dignissimos necessitatibus facilis tempore adipisci? Fuga atque magnam autem."></div>
+Innovations is the route map for inventions and inventions are the key to the better world. Do you have those unique key of ideas? We are here to hear your ideas in the form of Paper Presentation" onclick="pp()"></div>
+            <div class="debug sa-fade-frmright2" data-text="Code Debug
+Wanna catch some bugs in the program, what are you waiting for? grab a keyboard and dive in" onclick="debug()"></div>
             <div class="tq sa-fade-frmright3" data-text="Technical Quiz
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis deserunt magni, enim modi nam molestiae sunt tempore odit, quidem, aliquam, ullam laboriosam. Repellat cum architecto natus iusto id dolor ullam."></div>
+Like puzzling riddles? and mesmerizing technology? why not have a taste of both in the Tech Quiz. You will be having trivia about Technologies in the field of IT" onclick="quiz()"></div>
             <div class="speech sa-fade-frmright" data-text="Tech Speech
-The  participants  will  be  given a spot technical topic to speak. The topic will be a prevenient one. The speech should not be less than stipulated time given. If the participant took a long respite or if the speech was out of range, the participant will be rejected. One who was selected will be qualified to attend further round." onclick="techspeech()"></div>
+The  participants  will  be  given a spot technical topic to speak. The topic will be a prevenient one. The speech should not be less than stipulated time given. If the participant took a long respite or if the speech was out of range, the participant will be rejected. One who was selected will be qualified to attend further round" onclick="techspeech()"></div>
             <div class="wd sa-fade-frmright2" data-text="Web Development
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis deserunt magni, enim modi nam molestiae sunt tempore odit, quidem, aliquam, ullam laboriosam. Repellat cum architecto natus iusto id dolor ullam."></div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis deserunt magni, enim modi nam molestiae sunt tempore odit, quidem, aliquam, ullam laboriosam. Repellat cum architecto natus iusto id dolor ullam." onclick="wd.php"></div>
             <div class="robot sa-fade-frmright3" data-text="Line Follower Robot
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis deserunt magni, enim modi nam molestiae sunt tempore odit, quidem, aliquam, ullam laboriosam. Repellat cum architecto natus iusto id dolor ullam."></div>
+The objective of this contest is for a robot to follow a black line on a white background, without losing the line, and navigating several 90 degree turns. The robot to complete the course in the shortest period of time while accurately tracking the course line from start to finish wins" onclick="robot.php"></div>
           </div>
         </div>
       </section>
@@ -117,18 +123,18 @@ The  participants  will  be  given a spot technical topic to speak. The topic wi
           <p>Don't like codes don't worry these are noob proof</p>
           <div class="events container">
             <!-- <div class="space"></div> -->
-            <div class="connection sa-fade-frmright" data-text="Connections
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam quod eius laborum cum facere unde voluptatum assumenda consequuntur molestiae, fugit soluta aliquid, consectetur nam. Nihil officiis facere fugit id earum?"></div>
+            <div class="film sa-fade-frmright" data-text="Short Film
+Put your creativity to the action and show the world your masterpiece. A good director makes his audience feel what he want them to feel. The film is all about delivering emotions, it could be joy, sorrow or anger" onclick="film()"></div>
             <div class="gamming sa-fade-frmright2" data-text="Gamming
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, omnis, aut! Ab hic illum similique excepturi quasi nostrum adipisci veritatis fugiat ullam vel corrupti alias sunt, provident molestias, voluptas vitae."></div>
-            <div class="photography sa-fade-frmright3" data-text="Photography
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis deserunt magni, enim modi nam molestiae sunt tempore odit, quidem, aliquam, ullam laboriosam. Repellat cum architecto natus iusto id dolor ullam."></div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, omnis, aut! Ab hic illum similique excepturi quasi nostrum adipisci veritatis fugiat ullam vel corrupti alias sunt, provident molestias, voluptas vitae." onclick="game()"></div>
+            <div class="food sa-fade-frmright3" data-text="Eat-a-thon
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis deserunt magni, enim modi nam molestiae sunt tempore odit, quidem, aliquam, ullam laboriosam. Repellat cum architecto natus iusto id dolor ullam." onclick="eat()"></div>
             <div class="fpaint sa-fade-frmright" data-text="Face Painting
 Face painting options range from cheek art,partial face or full face! we don't limit ourselves to just faces. We love to be creative so just do where you want your design: arm,neck,leg etc." onclick="fpaint()"></div>
             <div class="art sa-fade-frmright2" data-text="Fine Arts
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis deserunt magni, enim modi nam molestiae sunt tempore odit, quidem, aliquam, ullam laboriosam. Repellat cum architecto natus iusto id dolor ullam."></div>
-            <div class="dubsmash sa-fade-frmright3" data-text="Dubsmash
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis deserunt magni, enim modi nam molestiae sunt tempore odit, quidem, aliquam, ullam laboriosam. Repellat cum architecto natus iusto id dolor ullam."></div>
+The true essence of land comes from its beauty and fragrance. the finest pattern of henna has its own aroma.Do you have that talent? then come and participate" onclick="art()"></div>
+            <div class="cym sa-fade-frmright3" data-text="Crypt Your Mind
+Get ready to push your mind to your limit with Crypt your mind contest." onclick="cym()"></div>
           </div>
         </div>
       </section>
@@ -201,33 +207,4 @@ Face painting options range from cheek art,partial face or full face! we don't l
       </section>
     </main>
 
-    <footer>
-      <div class="contact-grid">
-        <div class="contact">
-            <h5>Contact</h5>
-            <p><span>Balaji.T: </span>959 779 0175</p>
-            <p><span>Karthick.S: </span>805 652 9553</p>
-            <p><span>Kishore.M: </span>852 662 2084</p>
-        </div>
-        <div class="follow">
-          <h5>Follow us</h5>
-          <ul class="socialnet">
-            <li><a href="https://www.facebook.com/tekzion" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="https://www.youtube.com/channel/UCr0PjqqCEwX_iHRoXNjw_WQ" target="_blank"><i class="fab fa-youtube"></i></a></li>
-            <li><a href="mailto:tekzion2k18@aceatech.com"><i class="far fa-envelope"></i></a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="copyright"><p>Made by Rajamuthukumaran</p></div>
-    </footer>
-  </div>
-
-  <!-- scripts -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="js/scrollreveal.min.js"></script>
-  <script src="js/master.js"></script>
-  <script src="js/parallax.min.js"></script>
-  <script src="js/animation.js"></script>
-</body>
-
-</html>
+<?php include("includes/footer.php"); ?>
