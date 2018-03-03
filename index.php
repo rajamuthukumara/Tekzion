@@ -78,7 +78,7 @@
     <main>
       <section class="s-intro">
         <div class="intro intro-cont sa-fade-frmbtm">
-          <h1>Tekzion</h3>
+          <h1>Tekzion, March 17</h1>
           <p>
             We the students of computer science and IT department Alpha Pondicherry welcome you to our national level symposium. Here we will be having both technical and non-technical events so this is not just for computer science students, everyone departments from any colleges can participate. The entry fee will be 100rs, food will be provided for free. With entry fee, you can attend one non-technical and one technical
           </p>
@@ -88,14 +88,14 @@
             <img src="assets/img/tekzion-logo.png" alt="Tekzion">
           </div>
           <div class="counter sa-fade-frmbtm">
-            <!-- <p>March 17, 2018</p> -->
+            <p class="mhide">March 17, 2018</p>
             <p id="daystogo">days to go</p>
           </div>
         </div>
       </section>
 
       <!-- technical events -->
-      <section class="s-events s-technical parallax-window" id="events" data-parallax="scroll" data-image-src="./assets/img/technical.jpg">
+      <section class="s-events s-technical parallax">
         <div class="technical">
           <h4>Technical</h4>
           <p>Unleash the tech skill inside you</p>
@@ -109,7 +109,7 @@ Like puzzling riddles? and mesmerizing technology? why not have a taste of both 
             <div class="speech sa-fade-frmright" data-text="Tech Speech
 The  participants  will  be  given a spot technical topic to speak. The topic will be a prevenient one. The speech should not be less than stipulated time given. If the participant took a long respite or if the speech was out of range, the participant will be rejected. One who was selected will be qualified to attend further round" onclick="techspeech()"></div>
             <div class="wd sa-fade-frmright2" data-text="Web Development
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis deserunt magni, enim modi nam molestiae sunt tempore odit, quidem, aliquam, ullam laboriosam. Repellat cum architecto natus iusto id dolor ullam." onclick="wd.php"></div>
+Create your own visual style… let it be unique for yourself and yet identifiable for others" onclick="wd.php"></div>
             <div class="robot sa-fade-frmright3" data-text="Line Follower Robot
 The objective of this contest is for a robot to follow a black line on a white background, without losing the line, and navigating several 90 degree turns. The robot to complete the course in the shortest period of time while accurately tracking the course line from start to finish wins" onclick="robot.php"></div>
           </div>
@@ -117,7 +117,7 @@ The objective of this contest is for a robot to follow a black line on a white b
       </section>
 
       <!-- non technical events -->
-      <section class="s-events s-ntechnical parallax-window" data-parallax="scroll" data-image-src="./assets/img/ntechnical.jpg">
+      <section class="s-events s-ntechnical parallax">
         <div class="ntechnical">
           <h4>Non Technical</h4>
           <p>Don't like codes don't worry these are noob proof</p>
@@ -128,7 +128,7 @@ Put your creativity to the action and show the world your masterpiece. A good di
             <div class="gamming sa-fade-frmright2" data-text="Gamming
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, omnis, aut! Ab hic illum similique excepturi quasi nostrum adipisci veritatis fugiat ullam vel corrupti alias sunt, provident molestias, voluptas vitae." onclick="game()"></div>
             <div class="food sa-fade-frmright3" data-text="Eat-a-thon
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis deserunt magni, enim modi nam molestiae sunt tempore odit, quidem, aliquam, ullam laboriosam. Repellat cum architecto natus iusto id dolor ullam." onclick="eat()"></div>
+Not good at anything other than eating? don't worry we got you covered, try our Eat-a-thon" onclick="eat()"></div>
             <div class="fpaint sa-fade-frmright" data-text="Face Painting
 Face painting options range from cheek art,partial face or full face! we don't limit ourselves to just faces. We love to be creative so just do where you want your design: arm,neck,leg etc." onclick="fpaint()"></div>
             <div class="art sa-fade-frmright2" data-text="Fine Arts
@@ -190,7 +190,7 @@ Get ready to push your mind to your limit with Crypt your mind contest." onclick
         </div>
       </section> -->
       <section class="s-location">
-        <div class="location-alpha parallax-window" data-parallax="scroll" data-image-src="./assets/img/alpha.png">
+        <div class="location-alpha parallax">
           <div class="location-info">
             <h3>Vennue Location</h3>
             <p>
